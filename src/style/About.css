@@ -1,0 +1,83 @@
+.about-container {
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.panel-container {
+    flex: 1 1 300px;
+    padding: 4rem;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.hover-container {
+  outline: 0.1px solid black;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 70%;
+}
+
+h1 {
+    margin-top: 0px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.MuiTimeline-root {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+.MuiTimelineItem-root {
+  margin: 0 !important;
+  min-height: 70px !important;
+}
+
+.MuiTimelineItem-root::before {
+  display: none !important;
+}
+
+.MuiTimelineContent-root {
+  padding-left: 16px !important; 
+  padding-bottom: 16px !important; 
+  flex: 1 1 auto !important;
+  min-width: 0; 
+  overflow: hidden;
+}
+
+.MuiTimelineContent-root .MuiTypography-root {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.MuiTimelineItem-root {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  padding-right: 10px; 
+}
+
+.MuiTimelineItem-root:hover .MuiTypography-root {
+  font-weight: 500; 
+}
+
+.MuiTimelineItem-root:hover .MuiTimelineDot-root {
+  background-color: #333;
+  transform: scale(1.1);
+}

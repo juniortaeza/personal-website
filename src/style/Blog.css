@@ -1,0 +1,62 @@
+.blog-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+    padding: 4rem;
+}
+
+.section-button {
+    border: none;
+    background: none;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.blog-button {
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.close-button:hover {
+  background: #f0f0f0;
+}
+
+.blog-notes-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 45%;
+    max-width: 60vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: left;
+}

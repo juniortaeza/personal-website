@@ -37,47 +37,12 @@ p {
     margin-bottom: 10px;
 }
 
-.MuiTimeline-root {
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-bottom: 10px !important;
-}
-
-.MuiTimelineItem-root {
-  margin: 0 !important;
-  min-height: 70px !important;
-}
-
 .MuiTimelineItem-root::before {
   display: none !important;
-}
-
-.MuiTimelineContent-root {
-  padding-left: 16px !important; 
-  padding-bottom: 16px !important; 
-  flex: 1 1 auto !important;
-  min-width: 0; 
-  overflow: hidden;
 }
 
 .MuiTimelineContent-root .MuiTypography-root {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.MuiTimelineItem-root {
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  border-radius: 8px;
-  padding-right: 10px; 
-}
-
-.MuiTimelineItem-root:hover .MuiTypography-root {
-  font-weight: 500; 
-}
-
-.MuiTimelineItem-root:hover .MuiTimelineDot-root {
-  background-color: #333;
-  transform: scale(1.1);
 }

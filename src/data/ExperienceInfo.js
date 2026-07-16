@@ -1,19 +1,15 @@
 const ExperienceInfo = [
     {
         title : "Code Ninjas",
-        date : "Mar 2025 – Present",
-    },
-    {
-        title : "Career Break",
-        date : "Jun 2024 – Feb 2025",
+        date : "Coding Instructor • Mar 2025 – Present",
     },
     {
         title : "CyberArk",
-        date : "Jul 2022 – May 2024",
+        date : "Software Engineer Intern • Jul 2022 – May 2024",
     },
     {
         title : "AEVEX Aerospace",
-        date : "May 2021 – Aug 2021",
+        date : "Software Engineer Intern • May 2021 – Aug 2021",
         connectorEnd: true
     }
 ]

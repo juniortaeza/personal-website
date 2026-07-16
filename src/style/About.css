@@ -1,26 +1,27 @@
 .about-container {
-    flex-wrap: wrap;
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     align-items: flex-start;
+    min-width: 0;  
 }
 
 .panel-container {
-    flex: 1 1 300px;
-    padding: 4rem;
+    flex: 1 1 auto;
     text-align: left;
     box-sizing: border-box;
+    min-width: 0; 
+    padding: max(1rem, 4%); 
 }
 
-.hover-container {
-  outline: 0.1px solid black;
-  position: absolute;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.4);
-  z-index: 1;
-  border-radius: 8px;
-  padding: 1rem;
-  max-width: 70%;
+@media (min-width: 1024px) {
+    .about-container {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+    .panel-container {
+        padding: 4rem;
+    }
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
 }
 
 h2 {
+    word-break: break-word; 
     margin-bottom: 40px;
 }
 
@@ -37,12 +39,17 @@ p {
     margin-bottom: 10px;
 }
 
+.MuiTimeline-root {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .MuiTimelineItem-root::before {
-  display: none !important;
+    display: none !important;
 }
 
 .MuiTimelineContent-root .MuiTypography-root {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

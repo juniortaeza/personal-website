@@ -5,9 +5,23 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import "../style/About.css";
 
 import { useState } from "react";
+
+function PdfIconDownload() {
+  return (
+    <a
+      href="/resume.pdf"
+      download="Junior_Taeza_Resume.pdf"
+      style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
+      aria-label="Download Junior's Resume"
+    >
+      <PictureAsPdfIcon />
+    </a>
+  );
+}
 
 function CustomTimelineItem({ title, date, connectorEnd = false }) {
   return (
@@ -47,4 +61,4 @@ function CustomTimeline({ customTimelineItems }) {
   );
 }
 
-export { CustomTimelineItem, CustomTimeline };
+export { CustomTimelineItem, CustomTimeline, PdfIconDownload };

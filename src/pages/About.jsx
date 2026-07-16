@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import EducationInfo from "../data/EducationInfo.js";
 import ExperienceInfo from "../data/ExperienceInfo.js";
-import { CustomTimelineItem, CustomTimeline } from "../utils/AboutUtils.jsx";
+import { CustomTimelineItem, CustomTimeline, PdfIconDownload } from "../utils/AboutUtils.jsx";
 
 import "../style/index.css";
 import "../style/About.css";
@@ -28,10 +28,12 @@ function About() {
       <div className="panel-container">
         <p>incoming</p>
         <h2>MSCS at <u>Georgia Institute of Technology</u> – Specializing in Computing Systems</h2>
-        <p><u>education</u></p>
+        <p>education</p>
         <CustomTimeline customTimelineItems={EducationInfo} />
-        <p><u>professional experience</u></p>
+        <p>professional experience</p>
         <CustomTimeline customTimelineItems={ExperienceInfo} />
+        <p style={{ display: "inline", marginRight: "0.5rem" }}>formal resume download here</p>
+        <PdfIconDownload />
       </div>
 
       <Link to="/blog" className="nav-button next-button">

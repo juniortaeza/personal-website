@@ -29,11 +29,11 @@ function About() {
       </div>
 
       <div className="panel-container">
-        <p>education</p>
+        <p><u>education</u></p>
         <CustomTimeline customTimelineItems={EducationInfo} />
-        <p>professional experience</p>
+        <p><u>professional experience</u></p>
         <CustomTimeline customTimelineItems={ExperienceInfo} />
-        <p>favorite projects</p>
+        <p><u>favorite projects</u></p>
         <CustomTimeline customTimelineItems={ProjectInfo} />
       </div>
 

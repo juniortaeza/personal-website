@@ -2,16 +2,18 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
 import { BlogNotes } from "../data/BlogNotes";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function RenderMarkdown({ mdContent, closePopup }) {
   return (
-    <div className="popup-container">
-      <button className="close-button" onClick={closePopup}>
-        Close
-      </button>
+    <div className="popup-container" onClick={() => closePopup()}>
+      <div className="popup-content-area" onClick={(e) => e.stopPropagation()}>
+        <button className="close-button" onClick={closePopup}>
+          Close
+        </button>
 
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{mdContent}</ReactMarkdown>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{mdContent}</ReactMarkdown>
+      </div>
     </div>
   );
 }

@@ -25,18 +25,9 @@ function Blog() {
 
       <div>
         <h1>tech blog & life talks</h1>
-        <button className="section-button" onClick={() => setActiveTag("all")}>
-          <u>all</u>
-        </button>
-        <button
-          className="section-button"
-          onClick={() => setActiveTag("omscs")}
-        >
-          <u>school</u>
-        </button>
-        <button className="section-button" onClick={() => setActiveTag("work")}>
-          <u>work</u>
-        </button>
+        <button className="section-button" onClick={() => setActiveTag("all")}><u>all</u></button>
+        <button className="section-button" onClick={() => setActiveTag("omscs")}><u>school</u></button>
+        <button className="section-button" onClick={() => setActiveTag("work")}><u>work</u></button>
         <hr />
       </div>
 

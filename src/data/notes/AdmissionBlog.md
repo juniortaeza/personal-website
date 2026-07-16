@@ -9,9 +9,7 @@ Two years ago (May 2024), I graduated from USC with my Bachelor of Science in Co
 
 ### Area of Focus
 
-Don't get me wrong, there's a lot to learn about AI but my passion vests more deeply in anything backend. The user experiences the frontend and that alone is an art to master but knowing the behind-the-curtains is where my interests lie.
-
-Database systems? System design? Cloud computing? Computer architecture? That's where my interests lie.
+Don't get me wrong, there's a lot to learn about AI but my passion vests more deeply in anything backend. Database systems System design? Cloud computing? Computer architecture? That's where my interests lie.
 
 Therefore, I've chosen my Specialization in Computing Systems.
 

@@ -11,14 +11,13 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    /* Allows content to wrap to a new line on small screens */
     flex-wrap: wrap; 
     justify-content: center;
 }
 
 .image-container {
     border-radius: 50%;
-    /* Replace 125px with ~8rem */
+    outline: 0.1px solid black;
     width: 8rem;
     height: 8rem;
     flex-shrink: 0;
